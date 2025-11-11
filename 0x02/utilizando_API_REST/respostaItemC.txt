@@ -1,0 +1,7 @@
+{
+    "id": 2,
+    "album": "Imagine",
+    "nome": "Imagine",
+    "artista": "John Lennon",
+    "anoLancamento": 1971
+}
