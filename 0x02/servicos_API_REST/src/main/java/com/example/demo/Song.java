@@ -1,7 +1,7 @@
 package com.example.demo;
 
 public class Song {
-    int id;
+    Integer id;
     String nome;
     String artista;
     String album;

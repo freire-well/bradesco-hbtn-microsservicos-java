@@ -22,7 +22,7 @@ public class SongRepository {
     }
 
     public Song getSongById(Integer id) {
-       return (Song) list.stream().filter(c ->id.equals(c.getId())).findFirst().get();
+       return list.stream().filter(c ->id.equals(c.getId())).findFirst().get();
     }
 
     public void addSong(Song s) {
