@@ -26,10 +26,10 @@ public class SongRepository {
     }
 
     public void updateSong(Song s) {
-     list.stream().filter(song1 -> song1.getName().equals(s.getName())).findFirst().ifPresent(song1 -> song1.setName(s.getName()));
+     list.stream().filter(song1 -> song1.getNome().equals(s.getNome())).findFirst().ifPresent(song1 -> song1.setNome(s.getNome()));
     }
 
     public void removeSong(Song s) {
-        list.removeIf(song -> song.getName().equals(s.getName()));
+        list.removeIf(song -> song.getNome().equals(s.getNome()));
     }
 }
