@@ -3,5 +3,5 @@
     "album": "Imagine",
     "nome": "Imagine",
     "artista": "John Lennon",
-    "anoLancamento": 1971
+    "anoLancamento": "1971"
 }

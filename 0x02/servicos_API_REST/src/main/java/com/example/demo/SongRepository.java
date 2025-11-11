@@ -12,8 +12,8 @@ public class SongRepository {
 
     public SongRepository(List<Song> list) {
         this.list = list;
-        this.list.addAll(Arrays.asList(new Song(1, "Bohemian Rhapsody", "Queen", "A Night at the Opera", 1975),
-                new Song(2, "Imagine", "John Lennon", "Imagine", 1971)));
+        this.list.addAll(Arrays.asList(new Song(1, "Bohemian Rhapsody", "Queen", "A Night at the Opera", "1975"),
+                new Song(2, "Imagine", "John Lennon", "Imagine", "1971")));
 
     }
 

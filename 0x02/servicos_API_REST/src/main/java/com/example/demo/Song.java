@@ -5,9 +5,9 @@ public class Song {
     String nome;
     String artista;
     String album;
-    int anoLancamento;
+    String anoLancamento;
 
-    public Song(int id, String name, String artist, String album, int ano) {
+    public Song(int id, String name, String artist, String album, String ano) {
         this.id = id;
         this.nome = name;
         this.artista = artist;
@@ -23,11 +23,11 @@ public class Song {
         this.album = album;
     }
 
-    public int getAnoLancamento() {
+    public String getAnoLancamento() {
         return anoLancamento;
     }
 
-    public void setAnoLancamento(int anoLancamento) {
+    public void setAnoLancamento(String anoLancamento) {
         this.anoLancamento = anoLancamento;
     }
 
