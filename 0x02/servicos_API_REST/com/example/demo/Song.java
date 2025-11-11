@@ -1,14 +1,14 @@
 public class Song {
     int id;
     String nome;
-    String artist;
+    String artista;
     String album;
     int ano;
 
     public Song(int id, String name, String artist, String album, int ano) {
         this.id = id;
         this.nome = name;
-        this.artist = artist;
+        this.artista = artist;
         this.album = album;
         this.ano = ano;
     }
@@ -45,12 +45,12 @@ public class Song {
         this.nome = nome;
     }
 
-    public String getArtist() {
-        return artist;
+    public String getArtista() {
+        return artista;
     }
 
-    public void setArtist(String artist) {
-        this.artist = artist;
+    public void setArtista(String artista) {
+        this.artista = artista;
     }
 
     @Override
