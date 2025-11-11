@@ -3,14 +3,14 @@ public class Song {
     String nome;
     String artista;
     String album;
-    int ano;
+    int anoLancamento;
 
     public Song(int id, String name, String artist, String album, int ano) {
         this.id = id;
         this.nome = name;
         this.artista = artist;
         this.album = album;
-        this.ano = ano;
+        this.anoLancamento = ano;
     }
 
     public String getAlbum() {
@@ -21,12 +21,12 @@ public class Song {
         this.album = album;
     }
 
-    public int getAno() {
-        return ano;
+    public int getAnoLancamento() {
+        return anoLancamento;
     }
 
-    public void setAno(int ano) {
-        this.ano = ano;
+    public void setAnoLancamento(int anoLancamento) {
+        this.anoLancamento = anoLancamento;
     }
 
     public int getId() {
