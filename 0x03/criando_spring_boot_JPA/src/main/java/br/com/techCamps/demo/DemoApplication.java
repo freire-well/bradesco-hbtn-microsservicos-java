@@ -1,4 +1,4 @@
-package com.techCamps.demo;
+package src.main.java.br.com.techCamps.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
