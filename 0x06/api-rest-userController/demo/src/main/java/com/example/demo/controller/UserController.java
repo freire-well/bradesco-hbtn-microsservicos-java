@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import com.example.demo.exception.CPFException;
 import com.example.demo.exception.UserIdException;
 import com.example.demo.exception.UserNameException;
+import org.apache.logging.log4j.message.StringFormattedMessage;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -12,7 +13,7 @@ public class UserController {
     @GetMapping("/user-id/{id}")
     public String findUserById(@PathVariable int id) {
         if(!isValidId(id)){
-            throw new UserIdException("You have entered invalid ID");
+            throw new UserIdException(new StringFormattedMessage("You have ID %d invalid", id).toString());
         }
         String msg = "You have entered valid ID";
         return msg;
@@ -33,7 +34,7 @@ public class UserController {
 
         String msg = "You have entered valid CPF";
         if(!isValidString(cpf)){
-            throw new CPFException("You have entered invalid CPF");
+            throw new CPFException(new StringFormattedMessage("You have entered ID %s invalid", cpf).toString());
         }
         return msg;
 
