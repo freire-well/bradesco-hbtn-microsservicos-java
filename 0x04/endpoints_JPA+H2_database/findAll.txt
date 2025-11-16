@@ -8,12 +8,12 @@
             {
                 "id": 3,
                 "numero": "98253636",
-                "ddd": 18
+                "ddd": "18"
             }
         ],
         "enderecos": [
             {
-                "id": "1",
+                "id": 1,
                 "logradouro": "AVENIDA",
                 "endereco": "ALI PERTO",
                 "numero": "100",
@@ -32,17 +32,17 @@
             {
                 "id": 1,
                 "numero": "35445585",
-                "ddd": 14
+                "ddd": "14"
             },
             {
                 "id": 2,
                 "numero": "99668855",
-                "ddd": 14
+                "ddd": "14"
             }
         ],
         "enderecos": [
             {
-                "id": "2",
+                "id": 2,
                 "logradouro": "RUA",
                 "endereco": "LÁ LONGE",
                 "numero": "487",

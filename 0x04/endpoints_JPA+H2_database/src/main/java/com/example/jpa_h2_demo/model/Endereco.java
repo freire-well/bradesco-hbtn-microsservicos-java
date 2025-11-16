@@ -11,7 +11,7 @@ import lombok.Setter;
 @Getter @Setter @Entity
 public class Endereco {
     @Id
-    String id;
+    long id;
     String logradouro;
     String endereco;
     String numero;

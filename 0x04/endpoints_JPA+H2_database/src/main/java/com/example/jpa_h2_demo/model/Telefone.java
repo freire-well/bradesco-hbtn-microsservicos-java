@@ -12,9 +12,9 @@ import lombok.Setter;
 public class Telefone {
    @Id
     long id;
-    int DDD;
     String numero;
-    @ManyToOne
+    String DDD;
+ @ManyToOne
     @JsonBackReference
     @JoinColumn(name = "cliente_id")
     Cliente cliente;

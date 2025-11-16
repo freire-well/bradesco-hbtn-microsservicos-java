@@ -7,17 +7,17 @@
         {
             "id": 1,
             "numero": "35445585",
-            "ddd": 14
+            "ddd": "14"
         },
         {
             "id": 2,
             "numero": "99668855",
-            "ddd": 14
+            "ddd": "14"
         }
     ],
     "enderecos": [
         {
-            "id": "2",
+            "id": 2,
             "logradouro": "RUA",
             "endereco": "LÁ LONGE",
             "numero": "487",
