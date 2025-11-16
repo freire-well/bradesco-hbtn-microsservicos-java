@@ -1,5 +1,6 @@
 package com.example.jpa_h2_demo.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
@@ -17,6 +18,8 @@ public class Endereco {
     String bairro;
     String cidade;
     String estado;
-    @ManyToOne @JoinColumn(name = "cliente_id")
+    @ManyToOne
+    @JsonBackReference
+    @JoinColumn(name = "cliente_id")
     Cliente cliente;
 }
