@@ -13,6 +13,6 @@ public class Telefone {
     long id;
     int DDD;
     String numero;
-    @ManyToOne @JoinColumn
+    @ManyToOne @JoinColumn(name = "cliente_id")
     Cliente cliente;
 }

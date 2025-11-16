@@ -17,6 +17,6 @@ public class Endereco {
     String bairro;
     String cidade;
     String estado;
-    @ManyToOne @JoinColumn
+    @ManyToOne @JoinColumn(name = "cliente_id")
     Cliente cliente;
 }
