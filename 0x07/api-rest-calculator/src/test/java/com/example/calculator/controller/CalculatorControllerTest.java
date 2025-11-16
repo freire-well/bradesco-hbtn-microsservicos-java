@@ -21,7 +21,7 @@ public final class CalculatorControllerTest {
 
     @Test
     void messageWelcome() throws Exception {
-        Calculator calculator = new Calculator();   
+
         RequestBuilder request = get("/calculator/welcome");
         MvcResult result = mvc.perform(request).andReturn();
         assertEquals("Bem vindo à CALCULATOR API REST.", result.getResponse().getContentAsString());

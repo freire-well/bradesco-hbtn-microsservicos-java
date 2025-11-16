@@ -8,7 +8,7 @@ public class CalculatorTest {
 
     @Test
     void sumTest() {
-        // TODO
+        Calculator calculator = new Calculator();
     }
 
     @Test
