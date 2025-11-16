@@ -1,7 +1,7 @@
 You have entered valid ID
 {
     "status": 400,
-    "response": "You have entered invalid ID"
+    "response": "You have entered ID 0 invalid"
 }
 {
     "status": 400,
@@ -9,7 +9,7 @@ You have entered valid ID
 }
 {
     "status": 400,
-    "response": "You have entered invalid CPF"
+    "response": "You have entered ID 123456789987654 invalid"
 }
 
 You have entered valid CPF
