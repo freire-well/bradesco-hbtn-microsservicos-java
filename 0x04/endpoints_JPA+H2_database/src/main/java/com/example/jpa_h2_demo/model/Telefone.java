@@ -12,8 +12,8 @@ import lombok.Setter;
 public class Telefone {
    @Id
     long id;
-    String numero;
-    String DDD;
+ String DDD;
+ String numero;
  @ManyToOne
     @JsonBackReference
     @JoinColumn(name = "cliente_id")
