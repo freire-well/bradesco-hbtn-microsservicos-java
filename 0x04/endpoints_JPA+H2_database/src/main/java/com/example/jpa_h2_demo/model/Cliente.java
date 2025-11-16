@@ -17,7 +17,7 @@ public class Cliente {
     private int idade;
     private String email;
     @OneToMany(mappedBy = "cliente")
-    private  List<Telefone> telefone;
+    private  List<Telefone> telefones;
     @OneToMany(mappedBy = "cliente")
-    private List<Endereco> endereco;
+    private List<Endereco> enderecos;
 }
