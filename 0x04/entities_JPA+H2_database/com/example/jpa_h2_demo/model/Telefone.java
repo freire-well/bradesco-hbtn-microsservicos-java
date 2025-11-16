@@ -2,6 +2,7 @@ package com.example.jpa_h2_demo.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,6 +13,6 @@ public class Telefone {
     long id;
     int DDD;
     String numero;
-    @ManyToOne
+    @ManyToOne @JoinColumn
     Cliente cliente;
 }

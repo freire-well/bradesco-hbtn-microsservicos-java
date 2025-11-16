@@ -2,6 +2,7 @@ package com.example.jpa_h2_demo.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,8 +16,8 @@ public class Cliente {
     private String nome;
     private int idade;
     private String email;
-    @OneToMany
+    @OneToMany @JoinColumn
     private  List<Telefone> telefone;
-    @OneToMany
+    @OneToMany @JoinColumn
     private List<Endereco> endereco;
 }
