@@ -34,7 +34,7 @@ public class UserController {
 
         String msg = "You have entered valid CPF";
         if(!isValidString(cpf)){
-            throw new CPFException(new StringFormattedMessage("You have entered ID %s invalid", cpf).toString());
+            throw new CPFException(new StringFormattedMessage("You have entered CPF %s invalid.", cpf).toString());
         }
         return msg;
 
