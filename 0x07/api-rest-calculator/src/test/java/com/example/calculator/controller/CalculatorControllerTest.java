@@ -1,5 +1,6 @@
 package com.example.calculator.controller;
 
+import com.example.calculator.model.Calculator;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,7 @@ public final class CalculatorControllerTest {
 
     @Test
     void messageWelcome() throws Exception {
+        Calculator calculator = new Calculator();   
         RequestBuilder request = get("/calculator/welcome");
         MvcResult result = mvc.perform(request).andReturn();
         assertEquals("Bem vindo à CALCULATOR API REST.", result.getResponse().getContentAsString());
